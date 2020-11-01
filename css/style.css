@@ -1,7 +1,21 @@
 .gallery {
   display: flex;
+  align-items: center;
   list-style-type: none;
 }
 .gallery__item {
-  width: (100% / 3) px;
+  width: calc(100% / 3);
+  padding: 10px;
+}
+.gallery__img {
+  max-width: 100%;
+}
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+#validation-input.valid {
+  border-color: #4caf50;
+}
+#validation-input.invalid {
+  border-color: #f44336;
 }

@@ -19,5 +19,5 @@ const ingredientsRefs = ingredients.map((ingredient) => {
   ingredientEl.textContent = ingredient;
   return ingredientEl;
 });
-console.table(ingredientsRefs);
+// console.table(ingredientsRefs);
 ingredientsListRef.append(...ingredientsRefs);

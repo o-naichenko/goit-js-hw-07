@@ -26,27 +26,19 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
+
 const galleryRef = document.querySelector("#gallery");
-
-// const createMarkup = (images) => {
-//   let totalMarkup = ``;
-//   images.map((image) => {
-//     const markup = `<li><img src=${image.url} alt=${image.alt}></li>`;
-//     return (totalMarkup += markup);
-//   });
-//   return totalMarkup;
-// };
-// console.log(createMarkup(images));
-
-// galleryRef.insertAdjacentHTML("afterbegin", createGalleryItemsMarkup(images));
-
-// galleryRef.classList.add("gallery");
-
 const createItemMarkup = ({ url, alt }) => {
   return `<li><img src=${url} alt=${alt}></li>`;
 };
-const itemAllMarkup = images.map(createItemMarkup).join("");
+const allItemsMarkup = images.map(createItemMarkup).join("");
 
-galleryRef.insertAdjacentHTML("beforeend", itemAllMarkup);
+galleryRef.insertAdjacentHTML("beforeend", allItemsMarkup);
 
-console.log(galleryItemsRef);
+// console.log(galleryRef);
+const galleryItemRefs = [...galleryRef.children];
+const galleryImgRefs = [...galleryRef.querySelectorAll("img")];
+
+galleryRef.classList.add("gallery");
+galleryItemRefs.forEach((item) => item.classList.add("gallery__item"));
+galleryImgRefs.forEach((item) => item.classList.add("gallery__img"));
