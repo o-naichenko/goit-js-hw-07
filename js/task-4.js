@@ -25,10 +25,10 @@ const incrementBtn = document.querySelector("[data-action='increment']");
 // console.log(incrementBtn);
 
 decrementBtn.addEventListener("click", () => {
-  decrement;
+  decrement();
   valueRef.textContent = counterValue;
 });
 incrementBtn.addEventListener("click", () => {
-  increment;
+  increment();
   valueRef.textContent = counterValue;
 });
