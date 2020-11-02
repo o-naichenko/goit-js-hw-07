@@ -75,10 +75,21 @@
     
     <!-- task - 7 -->
     <h2>task-7</h2>
-    
+
     <input id="font-size-control" type="range" />
     <br />
     <span id="text">Абракадабра!</span>
+
+    <!-- task-8 -->
+    <h2>task-8</h2>
+    
+    <div id="controls">
+      <input type="number" min="0" max="100" step="1" />
+      <button type="button" data-action="render">Створити</button>
+      <button type="button" data-action="destroy">Очистити</button>
+    </div>
+    
+    <div id="boxes"></div>
     
 
     <script type="module" src="/js/task-1.js"></script>
@@ -88,5 +99,6 @@
     <script type="module" src="/js/task-5.js"></script>
     <script type="module" src="/js/task-6.js"></script>
     <script type="module" src="/js/task-7.js"></script>
+    <script type="module" src="/js/task-8.js"></script>
   </body>
 </html>
