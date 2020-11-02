@@ -23,6 +23,6 @@ const setInputColor = (event) => {
   if (inputLength == dataLength) {
     inputRef.classList.replace("invalid", "valid");
   } else inputRef.classList.add("invalid");
-  console.log(inputLength == dataLength);
+  //console.log(inputLength == dataLength);
 };
 inputRef.addEventListener("input", setInputColor);
